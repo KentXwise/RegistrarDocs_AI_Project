@@ -1,0 +1,61 @@
+<!--
+  Supabase Auth Email Template: Reset Password (Recovery)
+  Subject: Reset Your RegistrarDocs AI Password
+  Configure in Supabase Dashboard -> Authentication -> Email Templates -> Reset Password
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Your RegistrarDocs AI Password</title>
+</head>
+<body style="margin:0;padding:0;background-color:#F5F5EF;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#25352B;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#F5F5EF;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;background-color:#FFFFFF;border-radius:16px;border:1px solid #DCE5DF;overflow:hidden;">
+          <tr>
+            <td style="background-color:#174D32;padding:26px 32px;">
+              <p style="margin:0;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#E6EFE8;">
+                DNSC Registrar&rsquo;s Office
+              </p>
+              <h1 style="margin:6px 0 0;font-size:21px;font-weight:800;color:#FFFFFF;">
+                Password Reset Request
+              </h1>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 32px;font-size:14px;line-height:1.65;color:#25352B;">
+              <p style="margin:0 0 14px;">
+                We received a request to reset the password associated with your <strong>RegistrarDocs AI</strong> account.
+              </p>
+              <p style="margin:0 0 22px;color:#3E4F44;">
+                Click the button below to securely choose a new password. This link is valid for a limited time and can only be used once.
+              </p>
+              <table role="presentation" cellspacing="0" cellpadding="0" style="margin:0 0 24px;">
+                <tr>
+                  <td align="center" style="border-radius:10px;background-color:#174D32;">
+                    <a href="{{ .ConfirmationURL }}" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:13px 26px;font-size:14px;font-weight:700;color:#FFFFFF;text-decoration:none;border-radius:10px;">
+                      Reset Password
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <div style="background-color:#F5F5EF;border-left:4px solid #246B45;border-radius:8px;padding:12px 16px;font-size:13px;color:#3E4F44;">
+                If you did not request this password reset, you can safely ignore this email. Your current password will remain unchanged unless you complete the reset process.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#F5F5EF;border-top:1px solid #E2E8E4;padding:18px 32px;font-size:12px;color:#5F6F65;">
+              <p style="margin:0;font-weight:700;color:#174D32;">RegistrarDocs AI</p>
+              <p style="margin:2px 0 0;">Davao del Norte State College (DNSC) &middot; Registrar&rsquo;s Office</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
